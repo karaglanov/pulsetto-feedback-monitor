@@ -1,15 +1,159 @@
 {
-  "total_mentions": 0,
-  "negative_mentions": 0,
-  "issue_category_counts": {},
-  "attribute_counts": {},
-  "source_breakdown": {},
-  "stage_breakdown": {},
-  "trust_risk_score": 0,
-  "support_gap_count": 0,
-  "top_positive_signals": [],
-  "top_negative_signals": [],
-  "top_critical_mentions": [],
+  "total_mentions": 100,
+  "negative_mentions": 17,
+  "issue_category_counts": {
+    "no_results": 43,
+    "app_connectivity": 1,
+    "other": 18,
+    "recommendation_seeking": 15,
+    "comfort_fit": 5,
+    "support_silence": 3,
+    "pre_purchase_question": 1,
+    "delivery_logistics": 3,
+    "competitor_comparison": 1,
+    "poor_support_quality": 4,
+    "trust_skepticism": 1,
+    "positive_advocacy": 3,
+    "price_value_mismatch": 1,
+    "experience_sharing": 1
+  },
+  "attribute_counts": {
+    "product": 43,
+    "technical": 1,
+    "other": 18,
+    "discovery": 16,
+    "comfort": 5,
+    "support": 7,
+    "delivery": 3,
+    "competition": 1,
+    "trust": 1,
+    "advocacy": 3,
+    "price": 1,
+    "engagement": 1
+  },
+  "source_breakdown": {
+    "reddit": 100
+  },
+  "stage_breakdown": {
+    "first_use": 48,
+    "setup": 1,
+    "discovery": 36,
+    "support_aftercare": 11,
+    "purchase": 4
+  },
+  "trust_risk_score": 35,
+  "support_gap_count": 7,
+  "top_positive_signals": [
+    {
+      "text": "Pulsetto app update - Offline mode You asked. We delivered.\n\nOffline mode is now available in the Pulsetto app.\n\nFrom the very beginning, Pulsetto has been designed to support your daily routine, and one message from you",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/pulsetto_device/comments/1sgqnln/pulsetto_app_update_offline_mode/"
+    },
+    {
+      "text": "Pulsetto Discount Code 2026 + My Experience After a Few Weeks I\u2019ve been using the Pulsetto device for a few weeks now and wanted to share a quick, honest take in case anyone is looking into it this year.\n\nFor me it mainl",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/STOCKSPROMDEALS/comments/1s8pjg5/pulsetto_discount_code_2026_my_experience_after_a/"
+    },
+    {
+      "text": "TaVNS Folks\n\nHas anybody tried \"wellness\" products like the Pulsetto or Neuropod to treat their IBS? In children, clinically develop vagal stimulation systems have shown to benefit IBS symptoms  significantly with low ch",
+      "issue_category": "comfort_fit",
+      "severity": "medium",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/ibs/comments/1rnewod/tavns/"
+    },
+    {
+      "text": "Master list of 'vagus nerve stimulators' with discounts and links '**VNS' approaches/devices**  \nA few users have mentioned they are not able to get the Nurosym in their country, so here are some possible other options (",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/Nurosym/comments/1rh7beg/master_list_of_vagus_nerve_stimulators_with/"
+    },
+    {
+      "text": "Lucid Dreams and Vagus Nerve Stimulation I got a pulsetto. It has helped with relaxing and sleeping. Not anything earth-shattering, but a noticeable difference. Much like the sleep mask I started using. The combo has red",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/VagusNerve/comments/1reoje5/lucid_dreams_and_vagus_nerve_stimulation/"
+    }
+  ],
+  "top_negative_signals": [
+    {
+      "text": "Mystery Symptoms 101 This is a crash course for anyone who\u2019s stuck on mystery symptoms that are making your life hell. LC is bizarre and confusing and it can be hard to know where to start.\n\nI wanted to share the process",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/covidlonghaulers/comments/1si8kc4/mystery_symptoms_101/"
+    },
+    {
+      "text": "Pulsetto app update - Offline mode You asked. We delivered.\n\nOffline mode is now available in the Pulsetto app.\n\nFrom the very beginning, Pulsetto has been designed to support your daily routine, and one message from you",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/pulsetto_device/comments/1sgqnln/pulsetto_app_update_offline_mode/"
+    },
+    {
+      "text": "Pulsetto review after 2 months of use what actually changed for me I\u2019ve been using Pulsetto for a bit over 2 months now and wanted to share a straight\u2011to\u2011the\u2011point review, in case someone is on the fence about it.\n\nFor c",
+      "issue_category": "no_results",
+      "severity": "critical",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/STOCKSPROMDEALS/comments/1scex08/pulsetto_review_after_2_months_of_use_what/"
+    },
+    {
+      "text": "Pulsetto Discount Code 2026 + My Experience After a Few Weeks I\u2019ve been using the Pulsetto device for a few weeks now and wanted to share a quick, honest take in case anyone is looking into it this year.\n\nFor me it mainl",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/STOCKSPROMDEALS/comments/1s8pjg5/pulsetto_discount_code_2026_my_experience_after_a/"
+    },
+    {
+      "text": "Vibration feeling in skull during dissociation I was wondering if anyone else has experienced this feeling- I\u2019ve been using a Pulsetto for about 2 weeks now and it\u2019s really helped my anxiety and depression. The other day",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/VagusNerve/comments/1s7636a/vibration_feeling_in_skull_during_dissociation/"
+    }
+  ],
+  "top_critical_mentions": [
+    {
+      "text": "Mystery Symptoms 101 This is a crash course for anyone who\u2019s stuck on mystery symptoms that are making your life hell. LC is bizarre and confusing and it can be hard to know where to start.\n\nI wanted to share the process",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/covidlonghaulers/comments/1si8kc4/mystery_symptoms_101/"
+    },
+    {
+      "text": "Pulsetto app update - Offline mode You asked. We delivered.\n\nOffline mode is now available in the Pulsetto app.\n\nFrom the very beginning, Pulsetto has been designed to support your daily routine, and one message from you",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/pulsetto_device/comments/1sgqnln/pulsetto_app_update_offline_mode/"
+    },
+    {
+      "text": "Pulsetto review after 2 months of use what actually changed for me I\u2019ve been using Pulsetto for a bit over 2 months now and wanted to share a straight\u2011to\u2011the\u2011point review, in case someone is on the fence about it.\n\nFor c",
+      "issue_category": "no_results",
+      "severity": "critical",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/STOCKSPROMDEALS/comments/1scex08/pulsetto_review_after_2_months_of_use_what/"
+    },
+    {
+      "text": "Pulsetto Discount Code 2026 + My Experience After a Few Weeks I\u2019ve been using the Pulsetto device for a few weeks now and wanted to share a quick, honest take in case anyone is looking into it this year.\n\nFor me it mainl",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/STOCKSPROMDEALS/comments/1s8pjg5/pulsetto_discount_code_2026_my_experience_after_a/"
+    },
+    {
+      "text": "Vibration feeling in skull during dissociation I was wondering if anyone else has experienced this feeling- I\u2019ve been using a Pulsetto for about 2 weeks now and it\u2019s really helped my anxiety and depression. The other day",
+      "issue_category": "no_results",
+      "severity": "high",
+      "source": "reddit",
+      "url": "https://www.reddit.com/r/VagusNerve/comments/1s7636a/vibration_feeling_in_skull_during_dissociation/"
+    }
+  ],
   "recommended_actions": [
     "Prioritize support backlog cleanup and enforce a 24-hour first-response SLA.",
     "Publish clearer setup and app troubleshooting guidance to reduce first-week friction.",
