@@ -1,9 +1,9 @@
-name: Weekly Pulsetto Pipeline
+name: Daily Pulsetto Pipeline
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 9 * * 1'
+    - cron: '0 9 * * *'
 
 permissions:
   contents: write
@@ -40,14 +40,14 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore: refresh weekly Pulsetto data"
+          git commit -m "chore: refresh Pulsetto data"
           git push
 
       - name: Upload pipeline artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: weekly-pipeline-output
+          name: daily-pipeline-output
           path: |
             data/mentions.csv
             data/weekly_summary.json
