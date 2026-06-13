@@ -1,1 +1,1 @@
-source,timestamp,text,sentiment,city
+title,body_text,subreddit,author,created_date,url,source

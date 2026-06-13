@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -124,8 +125,24 @@ def build_weekly_summary(classified_mentions: list[dict[str, str]]) -> dict[str,
     }
 
 
+def load_weekly_summary(input_path: str) -> dict[str, Any]:
+    """Load an existing summary JSON file if it is present and valid."""
+    path = Path(input_path)
+    if not path.exists():
+        return {}
+
+    try:
+        with path.open("r", encoding="utf-8") as json_file:
+            payload = json.load(json_file)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+    return payload if isinstance(payload, dict) else {}
+
+
 def save_weekly_summary(output_path: str, summary: dict[str, Any]) -> None:
     """Persist summary JSON to disk."""
+    summary["last_refreshed_at"] = datetime.now(timezone.utc).isoformat()
     path = Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as json_file:

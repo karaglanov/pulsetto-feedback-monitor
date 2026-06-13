@@ -96,26 +96,26 @@ After deployment, open:
 
 The root URL automatically redirects to `web/`, where the dashboard lives, and the dashboard fetches `data/weekly_summary.json` with a GitHub Pages-safe path.
 
-## GitHub Actions weekly run
+## GitHub Actions daily auto-renew
 
 A GitHub Actions workflow is included at `.github/workflows/weekly_report.yml`.
 
 It runs the pipeline:
 
-- on a weekly schedule (every Monday at 09:00 UTC)
+- on a daily schedule (every day at 09:00 UTC)
 - on manual trigger (`workflow_dispatch`)
 
-During each run, GitHub Actions executes `python scripts/run_pipeline.py`, stages changes in `data/`, and pushes a bot commit (`chore: refresh weekly Pulsetto data`) only when generated files changed. This keeps the GitHub Pages dashboard up to date automatically without changing the Pages setup.
+During each run, GitHub Actions executes `python scripts/run_pipeline.py`, stages changes in `data/`, and pushes a bot commit (`chore: refresh Pulsetto data`) only when generated files changed. The pipeline first repairs or creates the mentions CSV header, keeps previously saved mentions, and only appends new unique Reddit URLs, which keeps the GitHub Pages dashboard up to date automatically without changing the Pages setup.
 
 ### Run manually from GitHub
 
 1. Open your repository on GitHub.
 2. Go to **Actions**.
-3. Select **Weekly Pulsetto Pipeline**.
+3. Select **Daily Pulsetto Pipeline**.
 4. Click **Run workflow**.
 5. Choose the branch and click **Run workflow**.
 
-After the run completes, download `weekly-pipeline-output` from the workflow run page to get:
+After the run completes, download `daily-pipeline-output` from the workflow run page to get:
 
 - `data/mentions.csv`
 - `data/weekly_summary.json`
