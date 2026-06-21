@@ -158,5 +158,7 @@
     "Prioritize support backlog cleanup and enforce a 24-hour first-response SLA.",
     "Publish clearer setup and app troubleshooting guidance to reduce first-week friction.",
     "Address trust questions with transparent evidence, expectations, and side-by-side comparisons."
-  ]
+  ],
+  "refresh_status": "preserved_previous_summary_no_current_rows",
+  "last_refreshed_at": "2026-06-21T11:39:47.991433+00:00"
 }
